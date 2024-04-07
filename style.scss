@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$yellow: #FFC12F;
+.wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+.homepage{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .header{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 100px;
+
+        .logo{
+            span{
+                color: $yellow;
+            }
+        }
+        .nav{
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    list-style:  none;
+                    a{
+                        text-decoration: none;
+                        margin: 0 20px;
+                    }
+                }
+            }
+        }
+    }
+    .homepageContainer{
+        width: 100%;
+        min-height: 90vh;
+        display: flex;
+        .homeLeft{
+            width: 50%;
+            height: 100%; 
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 100px;
+            justify-content: center;
+            h1{
+                margin: 50px 0;
+            }
+            p{
+                margin: 20px 0;
+                font-family: inter;
+            }
+            .btns{
+                margin-top: 30px;
+                display: flex;
+                button{
+                    margin-right: 30px;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    background-color: $yellow;
+                    color: #fff;
+                    border: none;
+                }
+
+                .moreBtn{
+                    display: flex;
+                    align-items: center;
+                .play{
+                    width: 50px;
+                    height: 50px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    color: $yellow;
+                    font-size: 30px;
+                  
+                    }
+                }    
+            }
+        }
+        .homeRight{
+           width: 50%;
+           height: 100%;
+           background-image: url(./img/homePIc.png);
+           background-size: cover;
+           background-position: center;
+        }
+    }
+}
+.workContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   margin-top: 40px;
+   .text{
+    font-size: 16px;
+    color: grey;
+    
+   }
+}
+   .cardsHolder{
+    display: flex;
+    justify-content: space-between;
+   }
+   .card{
+    width: 270px;
+    height: 440px;
+    box-shadow: 5px 10px 40px 4px ;
+    padding: 50px;
+    margin: 100px;
+   
+   }
+   .card1{
+    width: 270px;
+    height: 460px;
+    box-shadow: 5px 10px 40px 2px ;
+    padding: 60px;
+    margin: 50px;
+    
+   }
+   .card-image{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+   }
+   .cardTitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: black;
+    
+   }
+   .card-case{
+    text-align: center;
+    color: grey;
+   }
+   .logoDish{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    .text{
+        font-size: 16px;
+    color: grey;
+    }
+   }
+   .menu{
+display: flex;
+justify-content: center;
+position: relative;
+   }
+   .cardsMenu{
+
+   display: flex;
+   justify-content: center;
+   .holder{
+display: flex;
+justify-content: baseline;
+   
+   .car{
+    width: 265px;
+    height: 319px;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    
+    .car-image{
+        display: flex;
+        justify-content: center;
+    }
+    border-color: grey;
+    background-color: #e6dede;
+    .star{
+        display: flex;
+        justify-content: baseline;
+        padding: 5px 0;
+
+        .button{
+            background-color: $yellow;
+        }
+    }
+    .menutTitle{
+        font-size: 17px;
+        padding: 5px 0;
+    }
+    .case{
+        font-size: 15px;
+        color: grey;
+    }
+    .price{
+        display: flex;
+        justify-content: baseline;
+       padding: 20px 0;
+    }
+   }
+}
+}
+}
